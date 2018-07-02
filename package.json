@@ -2,6 +2,12 @@
   "name": "cordova-plugin-app-preferences",
   "version": "0.99.4",
   "description": "Application preferences plugin and preference pane generator",
+  "contributors": [
+    {
+      "name" : "James Macmillan",
+      "email" : "jamesm@packtpub.com"
+    }
+  ],
   "cordova": {
     "id": "cordova-plugin-app-preferences",
     "platforms": [
@@ -17,7 +23,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/apla/me.apla.cordova.app-preferences.git"
+    "url": "https://bitbucket.org/packt-internal/cordova-app-preferences.git"
   },
   "bin": {
     "cordova-app-preferences-generator": "bin/build-app-settings.js"
@@ -47,7 +53,7 @@
   "author": "Ivan Baktsheev",
   "license": "Apache-2.0",
   "bugs": {
-    "url": "https://github.com/apla/me.apla.cordova.app-preferences/issues"
+    "url": "https://bitbucket.org/packt-internal/cordova-app-preferences/issues"
   },
-  "homepage": "https://github.com/apla/me.apla.cordova.app-preferences"
+  "homepage": "https://bitbucket.org/packt-internal/cordova-app-preferences"
 }
