@@ -75,9 +75,14 @@ module.exports = function (context) {
 
 		if (mapping.attrs) {
 			for (var attrName in mapping.attrs) {
-				if (!config.hasOwnProperty(attrName))
-					continue;
 				var attrConfig = mapping.attrs[attrName];
+
+				if (!config.hasOwnProperty(attrName)) {
+					if (!attrConfig.default)
+						continue;
+					config[attrName] = attrConfig.default;
+				}
+
 				var elementKey = attrConfig[platformName];
 
 				var targetCheck = elementKey.split ('@');
@@ -89,8 +94,12 @@ module.exports = function (context) {
 					element.attrs[targetAttr] = [];
 				}
 				if (attrConfig.value) {
-					if (!attrConfig.value[config[attrName]] || !attrConfig.value[config[attrName]][platformName])
+					// fail if mapping is missing value for attribute
+					if (!attrConfig.value[config[attrName]])
 						throw "no mapping for type: "+ config.type + ", attr: " + attrName + ", value: " + config[attrName];
+					// ignore missing value for platform, because not all values are applicable to all platforms in the same way
+					if (!attrConfig.value[config[attrName]][platformName])
+						continue;
 					if (targetAttr)
 						element.attrs[targetAttr].push (attrConfig.value[config[attrName]][platformName]);
 					else

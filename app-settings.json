@@ -5,6 +5,8 @@
         "items":[{
 			"title":"Title",
 			"type":"textfield",
+			"capitalize": "words",
+			"correct": true,
 			"key":"title"
 		}, {
 			"title": "Password",

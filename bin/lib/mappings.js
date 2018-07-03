@@ -101,6 +101,7 @@ module.exports = {
 			keyboard: {
 				android: "@android:inputType",
 				ios: "KeyboardType",
+				default: 'text',
 				value: {
 					// Alphabet , NumbersAndPunctuation , NumberPad , URL , EmailAddress
 					// text, number, textUri, textEmailAddress
@@ -115,7 +116,6 @@ module.exports = {
 			// need a different handling for ios and android
 			// IsSecure
 			password: {
-				// omit @ to append value to attribute
 				android: "android:inputType",
 				ios: "IsSecure",
 				value: {
@@ -123,7 +123,28 @@ module.exports = {
 				}
 			},
 			// AutocapitalizationType
+			capitalize: {
+				// omit @ to append value to attribute
+				android: "android:inputType",
+				// None , Sentences , Words , AllCharacters.
+				ios: "AutocapitalizationType",
+				value: {
+					sentences: {ios: "Sentences", android: "textCapSentences"},
+					words: {ios: "Words", android: "textCapWords"},
+					chars: {ios: "AllCharacters", android: "textCapCharacters"},
+				}
+			},
 			// AutocorrectionType
+			correct: {
+				// omit @ to append value to attribute
+				android: "android:inputType",
+				// None , Sentences , Words , AllCharacters.
+				ios: "AutocorrectionType",
+				value: {
+					'false': {ios: "No"},
+					'true': {ios: "Yes", android: "textAutoCorrect"},
+				}
+			},
 			key:     commonMappings.key,
 			title:   commonMappings.title,
 			default: commonMappings.default,
