@@ -17,6 +17,7 @@ module.exports = function (context) {
 		platforms = {};
 
 	// fs, path, ET, cordova_util, ConfigParser
+	var write_options = {indent: 2};
 
 	// Check the currente platform version and map the path of resources
 	function getResPath(){
@@ -191,7 +192,7 @@ module.exports = function (context) {
 	function writeXmlFile(dir, file, xml) {
 		return fs.mkdir(dir)
 			.then(function () {
-				return fs.writeFile(path.join(dir, file), xml.write());
+				return fs.writeFile(path.join(dir, file), xml.write(write_options));
 			})
 	}
 
