@@ -145,6 +145,18 @@ module.exports = {
 					'true': {ios: "Yes", android: "textAutoCorrect"},
 				}
 			},
+
+			// SuggestionType
+			suggest: {
+			    // omit @ to append value to attribute
+			    android: "android:inputType",
+			    //ios: "SuggestionType",
+			    value: {
+			        'false': {android: "textNoSuggestions"},
+			        'true': {},
+			    }
+			},
+
 			key:     commonMappings.key,
 			title:   commonMappings.title,
 			default: commonMappings.default,
