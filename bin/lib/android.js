@@ -188,6 +188,13 @@ module.exports = function (context) {
 		};
 	}
 
+	function writeXmlFile(dir, file, xml) {
+		return fs.mkdir(dir)
+			.then(function () {
+				return fs.writeFile(path.join(dir, file), xml.write());
+			})
+	}
+
 	function build(config) {
 		var settingsDocuments = buildSettings(config),
 			preferencesDocument = settingsDocuments.preferencesDocument,
@@ -204,13 +211,13 @@ module.exports = function (context) {
 			.then(function (pathRes) {
 				pathXml    = path.join(pathRes, 'xml');
 				pathValues = path.join(pathRes, 'values');
-				return fs.mkdir(pathXml);
+				return writeXmlFile(pathXml, 'apppreferences.xml', preferencesDocument);
 			})
-			.then(function () { return fs.writeFile( path.join(pathXml,'apppreferences.xml'), preferencesDocument.write()); })
 
 			// Write localization resource file
-			.then(function () { return fs.mkdir(pathValues); })
-			.then(function (prefs) { return fs.writeFile( path.join(pathValues,'apppreferences.xml'), preferencesStringDocument.write()); })
+			.then(function () {
+				return writeXmlFile(pathValues, 'apppreferences.xml', preferencesStringDocument);
+			})
 
 			.then(function () { console.log('android preferences file was successfully generated'); })
 			.catch(function (err) {
