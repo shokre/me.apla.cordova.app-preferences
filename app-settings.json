@@ -7,6 +7,11 @@
 			"type":"textfield",
 			"key":"title"
 		}, {
+			"title": "Password",
+			"type": "textfield",
+			"password" : true,
+			"key": "password"
+		}, {
 			"title":"Language",
 			"type":"radio",
 			"key":"lang",

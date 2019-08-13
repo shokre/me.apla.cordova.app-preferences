@@ -114,6 +114,14 @@ module.exports = {
 			},
 			// need a different handling for ios and android
 			// IsSecure
+			password: {
+				// omit @ to append value to attribute
+				android: "android:inputType",
+				ios: "IsSecure",
+				value: {
+					'true': {ios: "true", android: "textPassword"},
+				}
+			},
 			// AutocapitalizationType
 			// AutocorrectionType
 			key:     commonMappings.key,
