@@ -17,6 +17,7 @@
 	</js-module>
 
 	<asset src="www/task/AppPreferences.js" target="task/AppPreferences.js" />
+	<asset src="ngCordova/AppPreferences.js" target="ngCordova/AppPreferences.js"/>
 
 	<hook type="before_plugin_install" src="bin/before_plugin_install.js" />
 
