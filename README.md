@@ -5,28 +5,19 @@ Why you should use this plugin?
 
  * Cordova + Promise interface out of the box
  * Supports many platforms (Android, iOS/macOS, Windows and local storage fallback)
- * Have tests
- (iOS: [![iOS and browser status](https://travis-ci.org/apla/me.apla.cordova.app-preferences.svg)](https://travis-ci.org/apla/me.apla.cordova.app-preferences),
- Android: [![Android status](https://circleci.com/gh/apla/me.apla.cordova.app-preferences.svg?&style=shield&circle-token=f3e5e46c1a698c62f0450bf1d25a3694d4f714c6)](https://circleci.com/gh/apla/me.apla.cordova.app-preferences),
- Windows: [![Windows status](https://ci.appveyor.com/api/projects/status/gl3qxq2o728sqbev?svg=true)](https://ci.appveyor.com/project/apla/me-apla-cordova-app-preferences),
- Browser: [![iOS and browser status](https://travis-ci.org/apla/me.apla.cordova.app-preferences.svg)](https://travis-ci.org/apla/me.apla.cordova.app-preferences))
  * Supports simple and complex data structures
  * Supports removal of the keys
  * Have preference pane generator for application (for Android and iOS) and can show native preferences
- * (Untested) reference change notification [#37](apla/me.apla.cordova.app-preferences#37)
- * (Untested) named preferences files for android and iOS suites [#97](apla/me.apla.cordova.app-preferences#97)
- * (Untested) synchronized preferences via iCloud or windows roaming [#75](apla/me.apla.cordova.app-preferences#75)
+ * (Untested) reference change notification [#37](https://github.com/apla/me.apla.cordova.app-preferences/issues/37)
+ * (Untested) named preferences files for android and iOS suites [#97](https://github.com/apla/me.apla.cordova.app-preferences/issues/97)
+ * (Untested) synchronized preferences via iCloud or windows roaming [#75](https://github.com/apla/me.apla.cordova.app-preferences/issues/75)
 
 Installing
 ---
 
-From plugin registry:
-
-	$ cordova plugin add cordova-plugin-app-preferences
-
 From the repo:
 
-	$ cordova plugin add https://github.com/apla/me.apla.cordova.app-preferences
+	$ cordova plugin add https://github.com/shokre/me.apla.cordova.app-preferences
 
 From a local clone:
 
