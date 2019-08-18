@@ -4,8 +4,8 @@
   "description": "Application preferences plugin and preference pane generator",
   "contributors": [
     {
-      "name" : "James Macmillan",
-      "email" : "jamesm@packtpub.com"
+      "name": "James Macmillan",
+      "email": "jamesm@packtpub.com"
     }
   ],
   "cordova": {

@@ -1,14 +1,14 @@
-"use strict";
+'use strict';
 
 angular
-  .module("ngCordova.extras.AppPreferences", [])
+  .module('ngCordova.extras.AppPreferences', [])
 
   /**
    * Angular wrapper around AppPreferences module
    */
-  .factory("$cordovaSimpleAppPreferences", [
-    "$window",
-    "$q",
+  .factory('$cordovaSimpleAppPreferences', [
+    '$window',
+    '$q',
     function($window, $q) {
       var prefs = $window.plugins.appPreferences;
 
@@ -21,11 +21,11 @@ angular
               p.resolve(result);
             },
             function(error) {
-              console.log("AppPreferences: save failed: ", error);
+              console.log('AppPreferences: save failed: ', error);
               p.reject();
             },
             key,
-            value
+            value,
           );
           return p.promise;
         },
@@ -40,10 +40,10 @@ angular
               // console.log("AppPreferences: load failed: " + error);
               p.resolve(null);
             },
-            key
+            key,
           );
           return p.promise;
-        }
+        },
       };
-    }
+    },
   ]);
