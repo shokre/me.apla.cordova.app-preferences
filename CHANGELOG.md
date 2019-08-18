@@ -1,3 +1,17 @@
+### v1.0.1 (2019-08-18)
+
+
+#### Documentation
+
+* remove test results ([9d6112b2](https://github.com/shokre/me.apla.cordova.app-preferences/commit/9d6112b2))
+* fix formatting ([79ce4f1c](https://github.com/shokre/me.apla.cordova.app-preferences/commit/79ce4f1c))
+* update readme ([e6c9a166](https://github.com/shokre/me.apla.cordova.app-preferences/commit/e6c9a166))
+
+
+#### Chores
+
+* fix plugin.xml repo and issue ([b68656d1](https://github.com/shokre/me.apla.cordova.app-preferences/commit/b68656d1))
+
 ## v1.0.0 (2019-08-18)
 
 
