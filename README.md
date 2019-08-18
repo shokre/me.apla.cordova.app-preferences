@@ -118,9 +118,10 @@ Module update for cordova < 5.x
 Please note that plugin id is changed for npm publishing, so if you used
 this plugin before cordova@5.0.0, you'll have to reinstall it:
 
+```bash
 $ cordova plugin rm me.apla.cordova.app-preferences
 $ cordova plugin add cordova-plugin-app-preferences
-
+```
 
 Show Preference pane
 ---
