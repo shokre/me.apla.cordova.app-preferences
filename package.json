@@ -6,6 +6,10 @@
     {
       "name": "James Macmillan",
       "email": "jamesm@packtpub.com"
+    },
+    {
+      "name": "shokre",
+      "email": "kbrlek@gmail.com"
     }
   ],
   "cordova": {
@@ -23,7 +27,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://bitbucket.org/packt-internal/cordova-plugin-app-preferences.git"
+    "url": "https://github.com/shokre/me.apla.cordova.app-preferences.git"
   },
   "bin": {
     "cordova-app-preferences-generator": "bin/build-app-settings.js"
@@ -53,7 +57,7 @@
   "author": "Ivan Baktsheev",
   "license": "Apache-2.0",
   "bugs": {
-    "url": "https://bitbucket.org/packt-internal/cordova-plugin-app-preferences/issues"
+    "url": "https://github.com/shokre/me.apla.cordova.app-preferences/issues"
   },
-  "homepage": "https://bitbucket.org/packt-internal/cordova-plugin-app-preferences"
+  "homepage": "https://github.com/shokre/me.apla.cordova.app-preferences"
 }
