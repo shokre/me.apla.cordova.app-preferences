@@ -22,6 +22,10 @@ var commonMappings = {
 		ios: "FooterText",
 		android: "@android:summary"
 	},
+	// pass required attribute to preferences
+	required: {
+		android: "@required"
+	}
 };
 
 module.exports = {
@@ -159,6 +163,7 @@ module.exports = {
 
 			key:     commonMappings.key,
 			title:   commonMappings.title,
+			required: commonMappings.required,
 			default: commonMappings.default,
 		}
 	},
